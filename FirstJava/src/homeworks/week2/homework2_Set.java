@@ -1,4 +1,4 @@
-package week02.collection;
+package homeworks.week2;
 
 import java.util.*;
 
