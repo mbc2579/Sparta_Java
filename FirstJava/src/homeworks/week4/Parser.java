@@ -9,7 +9,6 @@ public class Parser {
     private final Calculator calculator = new Calculator();
 
     public Parser parseFirstNum(String firstInput)  throws Exception{
-
         if(!Pattern.matches(NUMBER_REG, firstInput)) {
             throw new BadInputException("정수값");
         }
@@ -32,21 +31,21 @@ public class Parser {
     public Parser parseOperator(String operationInput) throws Exception {
         // 구현 1.
         if(!Pattern.matches(OPERATION_REG, operationInput)) {
-            throw new BadInputException("사칙 연산의 연산자");
+            throw new BadInputException("연산자");
         }
 
         switch (operationInput) {
             case "+":
-                this.calculator.setOperation(new AddOperation());
+                calculator.setOperation(new AddOperation());
                 break;
             case "-":
-                this.calculator.setOperation(new SubstractOperation());
+                calculator.setOperation(new SubstractOperation());
                 break;
             case "*":
-                this.calculator.setOperation(new MultiplyOperation());
+                calculator.setOperation(new MultiplyOperation());
                 break;
             case "/":
-                this.calculator.setOperation(new DivideOperation());
+                calculator.setOperation(new DivideOperation());
                 break;
         }
 

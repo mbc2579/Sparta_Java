@@ -62,7 +62,6 @@ public class Main {
             System.out.println("할인된 책 제목 : " + book.getBookName());
             System.out.println("할인된 책 가격 : " + book.getPrice());
         }
-
     }
 }
 
