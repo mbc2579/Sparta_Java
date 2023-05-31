@@ -9,7 +9,6 @@ public class Parser {
     private final Calculator calculator = new Calculator();
 
     public Parser parseFirstNum(String firstInput) throws Exception{
-
         if(!Pattern.matches(NUMBER_REG, firstInput)) {
             throw new BadInputException("정수값");
         }
