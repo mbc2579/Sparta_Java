@@ -1,12 +1,15 @@
-package homeworks.kiosk2;
+package homeworks.kiosk;
 
-import homeworks.week4.AbstractOperation;
+public class Menu1{
+    String name;
+    String description;
 
-public class Menu {
-    private String name;
-    private String description;
+    public Menu1(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
 
-    public static void menus() {
+    public void mainmenu() {
         System.out.println("NipongNaepong에 오신걸 환영합니다.");
         System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.");
         System.out.println();
