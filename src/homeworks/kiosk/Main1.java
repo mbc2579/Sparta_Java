@@ -14,6 +14,7 @@ public class Main1 {
         int count = 0;
         double total = 0;
 
+
         while (true) {
             System.out.println("NipongNaepong에 오신걸 환영합니다.");
             System.out.println("아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.");

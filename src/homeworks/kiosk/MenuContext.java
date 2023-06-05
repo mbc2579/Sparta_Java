@@ -9,8 +9,6 @@ import java.util.Map;
 
 public class MenuContext {
 
-    ArrayList<String> allList = new ArrayList<>();
-
 
     private Map<String, List<Menu1>> menus;
 
